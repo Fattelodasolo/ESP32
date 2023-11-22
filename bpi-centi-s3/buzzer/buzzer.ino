@@ -99,10 +99,10 @@ int noteDurations[] = {
 void setup() {
   for (int thisNote = 0; thisNote < 8; thisNote++) {
     int noteDuration = 1000 / noteDurations[thisNote];
-    tone(8, melody[thisNote], noteDuration);
+    tone(36, melody[thisNote], noteDuration);
     int pauseBetweenNotes = noteDuration * 1.30;
     delay(pauseBetweenNotes);
-    noTone(8);
+    noTone(36);
   }
 }
 
